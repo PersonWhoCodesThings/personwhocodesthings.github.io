@@ -1,9 +1,6 @@
-var player = {
-xspeed : 0,
-yspeed : 0,
-xacc : 0,
-yacc : 200,
-x : 2,
-y : 2,
-score : 0
+const c = document.getElementById("c")
+const cntx = c.getContext("2d")
+var plyr = {
+xmve : 0,
+ymve : 0
 };
