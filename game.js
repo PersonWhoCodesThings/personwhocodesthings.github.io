@@ -37,12 +37,14 @@ function tick() {
 // Input
 document.addEventListener('keydown', function(event) {
     if (event.key === 'W') {
-        player.ymve -= stats.speed;
+        player.ymve = -stats.speed;
     } else if (event.key === 'A') {
-        player.xmve -= stats.speed;
+        player.xmve = -stats.speed;
     } else if (event.key === 'S') {
-        player.ymve += stats.speed;
+        player.ymve = stats.speed;
     } else if (event.key === 'D') {
-        player.xmve += stats.speed;
+        player.xmve = stats.speed;
     };
 });
+
+setInterval(tick, 33)
